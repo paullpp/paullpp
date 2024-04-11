@@ -20,5 +20,12 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'react/react-in-jsx-scope': 'off',
+    'import/no-extraneous-dependencies': [
+      'error', {
+        'devDependencies': false,
+        'optionalDependencies': false,
+        'peerDependencies': false
+      },
+    ],
   },
 }

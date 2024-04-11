@@ -19,6 +19,8 @@
 .projectDescription {
   white-space: pre-line;  
   vertical-align: bottom;
+  width: 60vw;
+  margin: 20px;
 }
 
 .projects-container {
@@ -35,3 +37,19 @@
   margin: 20px;
   display: flex;
 }
+
+.banner {
+  width: 80vw;
+  height: 40vh;
+}
+
+.project-page-container {
+  margin: 20px;
+}
+
+.project-tags {
+  div {
+    margin: 10px;
+  }
+}
+
