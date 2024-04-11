@@ -1,12 +1,17 @@
 import Navbar from './components/Navbar';
 import './index.css';
+import projects from '../public/data/projects.json';
+import { Project } from './utils/types';
+import Card from './components/Card';
 
 export default function App() {
   return (
     <>
       <Navbar />
       <div className="divider" />
-      <h1> content </h1>
+      <div className="projects-container">
+        {projects?.map((project: Project) => <Card project={project} />)}
+      </div>
     </>
   );
 }
