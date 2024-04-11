@@ -4,8 +4,8 @@ import projects from '../../public/data/projects.json';
 import '../index.css';
 
 export default function ProjectSite(): JSX.Element {
-  const params = useParams();
-  const project: Project = projects[params.projectId];
+  const { projectId } = useParams<{ projectId?: string }>();
+  const project: Project = projects[parseInt(projectId!, 10)];
   return (
     <div className="project-page-container">
       <div className="hero rounded-lg banner" style={{ backgroundImage: `url(${project.imageUrl})` }}>
