@@ -15,9 +15,9 @@ export default function Card(props: Props): JSX.Element {
           <p>
             {project.descriptionShort}
           </p>
-          <div className="card-actions justify-end">
-            {project.tags.map((tag: string) => (
-              <div className="badge badge-outline">
+          <div className="card-actions">
+            {project.tags.slice(0, 3).map((tag: string) => (
+              <div className="badge badge-accent">
                 {tag}
               </div>
             ))}

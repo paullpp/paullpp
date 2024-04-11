@@ -9,8 +9,10 @@ export default function App() {
     <>
       <Navbar />
       <div className="divider" />
-      <div className="projects-container">
-        {projects?.map((project: Project) => <Card project={project} />)}
+      <div className="body-container">
+        <div className="projects-container">
+          {projects?.map((project: Project) => <Card project={project} />)}
+        </div>
       </div>
     </>
   );
