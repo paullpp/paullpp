@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { Project } from '../utils/types';
-import projects from '../../public/data/projects.json';
+import projects from '../data/projects.json';
 import '../index.css';
 
 export default function ProjectSite(): JSX.Element {
