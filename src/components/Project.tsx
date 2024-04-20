@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import { Project } from '../utils/types';
 import projects from '../data/projects.json';
 import '../index.css';
+import github from '../assets/github.svg';
 
 export default function ProjectSite(): JSX.Element {
   const { projectId } = useParams<{ projectId?: string }>();
@@ -27,6 +28,10 @@ export default function ProjectSite(): JSX.Element {
             {tag}
           </div>
         ))}
+        <a href={project.githubUrl} className="btn mt-5 ml-5 sm:btn-sm md:btn-md lg:btn-lg p-2" target="_blank" rel="noreferrer">
+          <img src={github} alt="Github" className="w-5" />
+          GitHub
+        </a>
       </div>
       <div className="projectDescription">
         {project.descriptionLong}

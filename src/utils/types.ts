@@ -7,4 +7,5 @@ export interface Project {
   descriptionShort: string,
   descriptionLong: string,
   url: string,
+  githubUrl: string,
 }
