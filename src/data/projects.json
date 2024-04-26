@@ -50,6 +50,18 @@
     "descriptionLong": "[TypeScript Rewrite in Progress ⚙️] \n\nMany people using spotify opt to add songs they like to their liked songs, rather than playlists. This allows for easier management of the songs in the liked songs playlist, as you can add / remove songs with just a swipe. However, you lose the ability to share the playlist with others, or make it public on your spotify profile. Moreso, spotify does not allow dumping your liked songs into a playlist that can be shared easily; you have to go through each song, and manually add it. This can obviously be quite tedious if you have any significant number of songs in your liked songs playlist. \n\nAfter me and some of my friends experienced this issue, I decided to make a simple node app that makes use of spotify's public API, and - after authorizing with your spotify account - automatically iterates through each song in your liked playlist, and dumps it into a new playlist called 'Liked Songs'. \n\n The app is pretty ugly looking back at it, but a typescript rewrite is planned, now that I know a lot more about JS/TS. The app was however good enough for me and my friends, and definitely served its purpose well.",
     "url": "https://github.com/paullpp/spotify-bot",
     "githubUrl": "https://github.com/paullpp/spotify-bot"
-
+  },
+  {
+    "id": 4,
+    "name": "Ungovernable Recipes",
+    "startDate": "2024-04-25",
+    "tags": [
+      "TypeScript", "NextJS", "React", "DaisyUI", "Clerk", "Tailwind"
+    ],
+    "imageUrl": "https://media.istockphoto.com/id/887636042/photo/the-start-of-something-delicious.jpg?s=612x612&w=0&k=20&c=2T_BCJQhhkfohcbcDZ14OV8rPStICJ9Q1_YjGUW2wCo=",
+    "descriptionShort": "Making a recipe site without ads",
+    "descriptionLong": "Every now and then I want to make a fancy dish, something of restaurant quality. Since I'm completely useless in the kitchen, and know very few recipes, I typically rely on recipes from online blogs or websites.\n\nHowever, I often find myself being bombarded with ads, video popups out of nowhere, and many more annoying ad-related things. I understand - the sites have to make money somehow, it's not exactly free to host websites (in most cases), so ads are an easy way to recoup some of the server cost.\n\nIt's mostly annoying when I'm at the store trying to shop for the recipe, and my phone can't handle the 400 ad requests the website is making, so it either freezes, crashes, or just lags.\n\nTo solve this, I made my own website, which is hosted on vercel using the hobby tier, so I incur not cost. The DB is also hosted on vercel, so it really is completely free, meaning I don't have to run ads. To start I'll need to copy recipes over from other sites into mine, but my hope is that with me using it, and some of my friends using it, I'll be able to build a solid repository of recipes that I can refer to while completely avoiding ads.",
+    "url": "https://ungovernablerecipes.com",
+    "githubUrl": "https://github.com/paullpp/ungovernable-recipes"
   }
 ]
