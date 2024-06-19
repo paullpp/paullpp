@@ -24,6 +24,8 @@ export const projects = createTable(
   {
     id: serial("id").primaryKey(),
     name: varchar("name", { length: 256 }),
+    description: varchar("description", { length: 1024 }),
+    imageUrl: varchar("imageUrl", { length: 1024 }),
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
       .notNull(),
