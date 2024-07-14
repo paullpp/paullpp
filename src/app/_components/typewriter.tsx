@@ -16,11 +16,6 @@ export default function Typewriter(props: { text: string }) {
       setDisplayText(() => placeholder.current);
       idx.current++;
     }
-    const removeDot = () => {
-      placeholder.current = text.substring(0, text.length - 1);
-      setDisplayText(() => placeholder.current);
-      idx.current--;
-    }
     if (idx.current < text.length) {
       const nextChar = setInterval(tick, interval.current);
       return () => clearInterval(nextChar);
@@ -39,7 +34,7 @@ export default function Typewriter(props: { text: string }) {
     }
   }, [showCursor]);
   return (
-    <span className="inline-block text-secondary-content text-9xl font-semibold w-[660px]">
+    <span className="inline-block text-white text-9xl font-semibold w-[660px]">
       {displayText}
       {showCursor && <>&#9646;</>}
     </span>

@@ -1,5 +1,5 @@
 import { db } from "./db";
-import { eq, sql, and } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 import { projects_tags, tags } from "./db/schema";
 
 export async function getProjects() {

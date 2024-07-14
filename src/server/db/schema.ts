@@ -3,7 +3,6 @@
 
 import { sql } from "drizzle-orm";
 import {
-  index,
   pgTableCreator,
   serial,
   integer,
@@ -24,7 +23,8 @@ export const projects = createTable(
   {
     id: serial("id").primaryKey(),
     name: varchar("name", { length: 256 }),
-    description: varchar("description", { length: 1024 }),
+    url: varchar("url", { length: 512 }),
+    gh_url: varchar("gh_url", { length: 512 }),
     imageUrl: varchar("imageUrl", { length: 1024 }),
     createdAt: timestamp("created_at", { withTimezone: true })
       .default(sql`CURRENT_TIMESTAMP`)
