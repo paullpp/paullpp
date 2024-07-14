@@ -1,7 +1,3 @@
 # Portfolio
 
-### [paullpp.com](http://www.paullpp.com)
-
-
-
-
+### [paullpp.com](https://www.paullpp.com)
