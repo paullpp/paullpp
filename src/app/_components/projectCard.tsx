@@ -2,7 +2,6 @@
 import { useState } from "react";
 
 interface Project {
-  tags: string[] | undefined,
   id: number,
   name: string | null,
   url: string | null,
